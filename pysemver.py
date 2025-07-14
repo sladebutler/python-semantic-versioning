@@ -77,7 +77,7 @@ def main():
 
     # Compile regex patterns for better readability
     breaking_change_pattern = re.compile(r'\+semver:\s?(breaking|major)')
-    feature_change_pattern = re.compile(r'\+semver:\s?(feature|minor)')
+    feature_change_pattern = re.compile(r'\+semver:\s?(feature|feat|minor)')
     fix_change_pattern = re.compile(r'\+semver:\s?(fix|patch)')
 
     if breaking_change_pattern.search(msgs):
